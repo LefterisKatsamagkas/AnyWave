@@ -55,7 +55,6 @@ export default function HomePage() {
     }, [isLoggedIn, user?.id]);
 
     const handleLogout = async () => {
-        console.log('logout');
         try {
             await axios.post('https://anywave.onrender.com/api/auth/logout');
             
@@ -182,7 +181,7 @@ export default function HomePage() {
             {/* Content overlay */}
             <div className='absolute inset-0 flex flex-col'>
                 {/* Header */}
-                <div className='flex justify-end p-2 md:p-4 z-10'>
+                <div className='flex justify-end p-2 md:p-4 z-50'>
                     {isLoggedIn ? (
                         <>
                             <button 
