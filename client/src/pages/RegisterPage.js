@@ -62,7 +62,7 @@ function RegisterPage() {
   return (
     <div
       className="bg-indigo-800 min-h-screen flex justify-center items-center px-4 md:px-8 lg:px-16 py-10 bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/beach-bg.jpg')" }}
+      style={{ backgroundImage: "url('/AnyWave/images/beach-bg.jpg')" }}
     >
       <div className="bg-white rounded-3xl flex flex-col md:flex-row w-full max-w-lg md:max-w-7xl overflow-hidden shadow-2xl">
 
@@ -201,10 +201,10 @@ function RegisterPage() {
         {/* RIGHT SIDE */}
         <div
           className="hidden md:flex flex-[1.3] bg-cover bg-center rounded-3xl items-center justify-center m-2"
-          style={{ backgroundImage: "url('/images/beach-2.jpg')" }}
+          style={{ backgroundImage: "url('/AnyWave/images/beach-2.jpg')" }}
         >
           <img
-            src="/images/anywave.png"
+            src="/AnyWave/images/anywave.png"
             alt="AnyWave Logo"
             className="h-56 w-auto pointer-events-none"
           />

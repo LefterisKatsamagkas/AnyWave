@@ -7,7 +7,7 @@ export default function BackgroundVideo() {
         loop
         muted
       >
-        <source src="/videos/beach-bg.mp4" type="video/mp4" />
+        <source src="/AnyWave/videos/beach-bg.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>

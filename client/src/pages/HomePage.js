@@ -220,7 +220,7 @@ export default function HomePage() {
 
                 {/* Logo and search bar */}
                 <div className='flex flex-col justify-center items-center max-w-[350px] md:max-w-[650px] w-full mx-auto pt-4 pb-4 md:pt-10 z-10'>
-                    <img src="/images/anywave.png" className='w-24 md:w-80 pb-4 pointer-events-none'/>
+                    <img src="/AnyWave/images/anywave.png" className='w-24 md:w-80 pb-4 pointer-events-none'/>
                     <div className='relative w-full'>
                         <input 
                             type="text"
@@ -235,7 +235,7 @@ export default function HomePage() {
                             disabled={isLoading}
                         />
                         <img
-                            src="/images/favicon.png"
+                            src="/AnyWave/images/favicon.png"
                             className='w-5 md:w-8 absolute top-[3px] md:top-[6.5px] left-[4px] md:left-[6.5px] select-none pointer-events-none'
                         />
                         {/* Search Button/Loader */}

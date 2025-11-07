@@ -1,10 +1,11 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import HomePage from './pages/HomePage';
 import TestPage from './pages/TestPage';
 import BeachPage from './pages/BeachPage';
 import { BeachProvider } from './context/beachContext';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (

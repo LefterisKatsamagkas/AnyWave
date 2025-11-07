@@ -271,7 +271,7 @@ export default function BeachPage() {
                 {/* SearchBar */}
                 <div className='flex items-center justify-center gap-2 w-[600px] md:w-[600px] md:pr-4'>
                     <button onClick={() => {navigate('/')}}>
-                        <img src='/images/anywave.png' className='w-14 md:w-20'></img>
+                        <img src='/AnyWave/images/anywave.png' className='w-14 md:w-20'></img>
                     </button>
                     <div className="relative w-full">
                         <input
