@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/AnyWave/static/css/main.89598b26.css",
-    "main.js": "/AnyWave/static/js/main.9cb65e37.js",
+    "main.css": "/AnyWave/static/css/main.d72eca20.css",
+    "main.js": "/AnyWave/static/js/main.795e3230.js",
     "static/js/453.e68077ec.chunk.js": "/AnyWave/static/js/453.e68077ec.chunk.js",
     "index.html": "/AnyWave/index.html",
-    "main.89598b26.css.map": "/AnyWave/static/css/main.89598b26.css.map",
-    "main.9cb65e37.js.map": "/AnyWave/static/js/main.9cb65e37.js.map",
+    "main.d72eca20.css.map": "/AnyWave/static/css/main.d72eca20.css.map",
+    "main.795e3230.js.map": "/AnyWave/static/js/main.795e3230.js.map",
     "453.e68077ec.chunk.js.map": "/AnyWave/static/js/453.e68077ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.89598b26.css",
-    "static/js/main.9cb65e37.js"
+    "static/css/main.d72eca20.css",
+    "static/js/main.795e3230.js"
   ]
 }
