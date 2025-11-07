@@ -35,7 +35,7 @@ function LoginPage() {
       localStorage.setItem('user', JSON.stringify(user));
       await supabase.auth.setSession(session);
 
-      setTimeout(() => navigate('/'), 1500);
+      setTimeout(() => navigate('#/'), 1500);
     } catch (error) {
       if (error.response?.data?.error) {
         setError(error.response.data.error);
@@ -140,7 +140,7 @@ function LoginPage() {
               <p className="text-gray-600 text-md">
                 Don't have an account?{' '}
                 <a
-                  href="/register"
+                  href="#/register"
                   className="text-blue-600 font-semibold hover:text-blue-700 hover:underline transition-colors"
                 >
                   Create account

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import HomePage from './pages/HomePage';
@@ -10,7 +10,7 @@ import { BeachProvider } from './context/beachContext';
 function App() {
   return (
     <BeachProvider>
-      <Router basename='/AnyWave'>
+      <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/beach-info" element={<BeachPage />} />
