@@ -18,6 +18,7 @@ export default function HomePage() {
     const [showDropdown, setShowDropdown] = useState(false);
     const [likedBeaches, setLikedBeaches] = useState([]);
     const [beachesLoading, setBeachesLoading] = useState(false);
+    const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
     const navigate = useNavigate();
 
@@ -174,12 +175,16 @@ export default function HomePage() {
     );
 
     return (
-        <div className='relative h-screen'>
+        <div className='relative h-screen bg-slate-800'>
             {/* Background Video */}
-            <BackgroundVideo/>
-            
-            {/* Content overlay */}
-            <div className='absolute inset-0 flex flex-col'>
+            <BackgroundVideo onVideoLoaded={() => setIsVideoLoaded(true)} />
+            {!isVideoLoaded ? (
+                <div className='absolute inset-0 flex items-center justify-center bg-slate-800 z-50'>
+                    <img src='/Anywave/images/favicon.png' className='w-40 h-auto'></img>
+                </div>
+            ) : (
+                /* Content overlay */
+                <div className='absolute inset-0 flex flex-col'>
                 {/* Header */}
                 <div className='flex justify-end p-2 md:p-4 z-50'>
                     {isLoggedIn ? (
@@ -322,6 +327,7 @@ export default function HomePage() {
                     )}
                 </div>
             </div>
+            )}
         </div>
     )
 }
