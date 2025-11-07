@@ -28,5 +28,5 @@ export const getWeatherIcon = (weatherCode, isDay = true) => {
   };
   
   const iconName = iconMap[weatherCode] || 'overcast';
-  return `/weather_icons/${iconName}.svg`;
+  return `/AnyWave/weather_icons/${iconName}.svg`;
 };
