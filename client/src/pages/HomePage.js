@@ -180,7 +180,7 @@ export default function HomePage() {
             <BackgroundVideo onVideoLoaded={() => setIsVideoLoaded(true)} />
             {!isVideoLoaded ? (
                 <div className='absolute inset-0 flex items-center justify-center bg-slate-800 z-50'>
-                    <img src='/Anywave/images/favicon.png' className='w-40 h-auto'></img>
+                    <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-blue-400"></div>
                 </div>
             ) : (
                 /* Content overlay */
