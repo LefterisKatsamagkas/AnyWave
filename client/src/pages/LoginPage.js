@@ -35,7 +35,7 @@ function LoginPage() {
       localStorage.setItem('user', JSON.stringify(user));
       await supabase.auth.setSession(session);
 
-      setTimeout(() => navigate('#/'), 1500);
+      setTimeout(() => navigate('/'), 1500);
     } catch (error) {
       if (error.response?.data?.error) {
         setError(error.response.data.error);
