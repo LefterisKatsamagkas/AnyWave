@@ -117,7 +117,7 @@ export default function BeachPage() {
 
     const handleLogout = async () => {
         try {
-            await axios.post('https://anywave.onrender.com/api/auth/logout');
+            await axios.post(`${process.env.REACT_APP_API_URL}/api/auth/logout`);
             
             setIsLoggedIn(false);
             setUser(null);
@@ -140,7 +140,7 @@ export default function BeachPage() {
         
         setIsLoading(true);
         try {
-            const response = await axios.post('https://anywave.onrender.com/api/weather', { searchQuery: searchText });
+            const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/weather`, { searchQuery: searchText });
             
             if (response.data.coordinates && response.data.temperature && response.data.wave_height) {
                 setSelectedBeach({

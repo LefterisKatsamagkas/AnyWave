@@ -28,7 +28,7 @@ function LoginPage() {
     }
 
     try {
-      const response = await axios.post('https://anywave.onrender.com/api/auth/login', formData);
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/auth/login`, formData);
       const { session, user } = response.data;
 
       localStorage.setItem('token', session.access_token);
@@ -150,7 +150,7 @@ function LoginPage() {
           </form>
         </div>
 
-        {/* RIGHT SIDE (Keep same styling) */}
+        {/* RIGHT SIDE */}
         <div
           className="hidden md:flex flex-[1.3] bg-cover bg-center rounded-3xl items-center justify-center m-2"
           style={{ backgroundImage: "url('/AnyWave/images/beach-2.jpg')" }}

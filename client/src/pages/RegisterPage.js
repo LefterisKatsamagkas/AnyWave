@@ -34,7 +34,7 @@ function RegisterPage() {
     }
 
     try {
-      const response = await axios.post('https://anywave.onrender.com/api/auth/register', {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/auth/register`, {
         email: formData.email,
         password: formData.password,
         username: formData.username,

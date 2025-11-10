@@ -42,7 +42,7 @@ export default function HomePage() {
         const fetchFavoriteBeaches = async () => {
             try {
                 setBeachesLoading(true);
-                const response = await axios.post("https://anywave.onrender.com/api/beaches/liked-beaches", { user_id: user.id });
+                const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/beaches/liked-beaches`, { user_id: user.id });
                 setLikedBeaches(response.data.fav_beaches);
             } catch (error) {
                 console.log("Error fetching favorite beaches", error);
@@ -57,7 +57,7 @@ export default function HomePage() {
 
     const handleLogout = async () => {
         try {
-            await axios.post('https://anywave.onrender.com/api/auth/logout');
+            await axios.post(`${process.env.REACT_APP_API_URL}/api/auth/logout`);
             
             setIsLoggedIn(false);
             setUser(null);
@@ -80,7 +80,7 @@ export default function HomePage() {
         
         setIsLoading(true);
         try {
-            const response = await axios.post('https://anywave.onrender.com/api/weather', { searchQuery: input });
+            const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/weather`, { searchQuery: input });
             
             if (response.data.coordinates && response.data.temperature && response.data.wave_height) {
                 setSelectedBeach({
@@ -116,7 +116,7 @@ export default function HomePage() {
         console.log('input', input);
         const { lat: latitude, lng: longitude, beach_name: placeName} = input;
         try {
-            const response = await axios.post('https://anywave.onrender.com/api/weather', { latitude, longitude, placeName});
+            const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/weather`, { latitude, longitude, placeName});
 
             if (response.data.coordinates && response.data.temperature && response.data.wave_height) {
                 setSelectedBeach({

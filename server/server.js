@@ -20,5 +20,9 @@ app.use('/api/beaches', beachRoutes);
 
 // Start server
 app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}!`);
+  if (port === 5000) {
+    console.log(`Server running on http://localhost:${port}!`);
+  } else {
+    console.log(`Server running on https://anywave.onrender.com/`)
+  }
 });
