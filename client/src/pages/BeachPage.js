@@ -321,7 +321,7 @@ export default function BeachPage() {
                 ) : (
                     <button
                         onClick={() => navigate("/login")}
-                        className='rounded-3xl bg-white py-1 md:py-2 px-3 md:px-4 text-xs md:text-base self-end'
+                        className='rounded-3xl bg-white py-1 md:py-2 px-3 md:px-4 text-xs md:text-base self-end whitespace-nowrap'
                     >
                         Sign in
                     </button>
