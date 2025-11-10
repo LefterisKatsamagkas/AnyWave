@@ -9,9 +9,14 @@ You can **search for beaches**, **view live conditions**, and **save your favori
 
 ## 📸 Screenshots
 
-| Home Page | Beach Details | Favorites | Log In |
-|------------|----------------|------------|
-| ![Home Page](./screenshots/HomePage.png) | ![Beach Details](./screenshots/BeachPage.png) | ![Favorites](./screenshots/FavoriteBeaches.png) | ![Log In](./screenshots/LogInPage.png) |
+Home Page
+![Home Page](./screenshots/HomePage.png)
+Beach Details
+![Beach Details](./screenshots/BeachPage.png)
+Favorites
+![Favorites](./screenshots/FavoriteBeaches.png) 
+Log In
+![Log In](./screenshots/LogInPage.png)
 
 ---
 
