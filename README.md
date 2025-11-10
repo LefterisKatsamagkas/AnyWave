@@ -9,11 +9,9 @@ You can **search for beaches**, **view live conditions**, and **save your favori
 
 ## 📸 Screenshots
 
-| Home Page | Beach Details | Favorites |
+| Home Page | Beach Details | Favorites | Log In |
 |------------|----------------|------------|
-| ![Home Page](./screenshots/home.png) | ![Beach Details](./screenshots/details.png) | ![Favorites](./screenshots/favorites.png) |
-
-> 🖼️ Replace these image paths with your actual screenshots (e.g. `./assets/screenshots/home.png`).
+| ![Home Page](./screenshots/HomePage.png) | ![Beach Details](./screenshots/BeachPage.png) | ![Favorites](./screenshots/FavoriteBeaches.png) | ![Log In](./screenshots/LogInPage.png) |
 
 ---
 
