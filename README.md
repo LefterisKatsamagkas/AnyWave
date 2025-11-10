@@ -75,8 +75,8 @@ REACT_APP_SUPABASE_ANON_KEY=<your_supabase_anon_key>
 For backend (server/.env)
 ```bash
 GOOGLE_MAPS_API_KEY=<your_googleMaps_key>
-SUPABASE_URL=https://vdsvtfuiyzuriweixbud.supabase.co
-SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZkc3Z0ZnVpeXp1cml3ZWl4YnVkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2MDYwMTczOCwiZXhwIjoyMDc2MTc3NzM4fQ.6NQfCuGGIwS2U6UhL_j5Q0l_mPqTYcIZcBu-0XyoAf0
+SUPABASE_URL=<your_supabase_url>
+SUPABASE_SERVICE_ROLE_KEY=<your_supabase_service_role_key>
 ```
 ### 4️⃣ Run the app locally
 Start the backend
