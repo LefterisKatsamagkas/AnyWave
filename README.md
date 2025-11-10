@@ -62,7 +62,7 @@ npm install
 Backend
 ```bash
 cd server
-npm install
+node server.js
 ```
 ### 3️⃣ Set up environment variables
 Create a .env file in both the client and server directories.
@@ -93,5 +93,7 @@ Then visit http://localhost:3000
 
 ### 🚀 Deployment
 
-- **Frontend:**
-- **Backend:**
+- **Frontend:** [GitHub Pages](https://lefteriskatsamagkas.github.io/AnyWave/)
+- **Backend:** [Render](https://render.com/)
+
+
